@@ -263,7 +263,7 @@ a.btn-general{
 ********************************************/
 #work{
     position: relative;
-    margin-top: 70px;
+    margin-top: 140px;
 }
 .work-bg-container{
     background: url(../img/what-we-do/bgbg.jpg);
@@ -386,7 +386,6 @@ a.btn-general{
 }
 .work-content{
     position: absolute;
-    width: 100%;
     top: 40%;   
     left: 14%;
     z-index: 5;
@@ -413,16 +412,47 @@ a.btn-general{
     width: 250px;
     color: #fff;
 }
-
+.recycle-icon{
+    min-height: 32px;
+    background: url('../img/what-we-do/recycle-icon.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: all .4s ease-in-out;
+}
+.ecosystem-icon{
+    min-height: 32px;
+    background: url('../img/what-we-do/ecosystem-icon.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: all .4s ease-in-out;
+}
+.wind-icon{
+    min-height: 32px;
+    background: url('../img/what-we-do/windmill-icon.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: all .4s ease-in-out;
+}
+.forest-icon{
+    min-height: 32px;
+    background: url('../img/what-we-do/save-forest-icon.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: all .4s ease-in-out;
+}
+.work:hover .ecosystem-icon,.work:hover .forest-icon,.work:hover .wind-icon,.work:hover .recycle-icon{
+    transform: translateY(-20px);
+}
 /********************************************
                 HELP-US SECTION
 ********************************************/
-#help-us{
-    background: #f4f4f4;
-    
-}
+
 #help-us .leaf-bg{
-    background: url(../img/about-us/transparent-leaf-bg.png);
+    background: url(../img/about-us/white-leaf-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -485,4 +515,253 @@ a.btn-general{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.donate-img{
+    width: 32px;
+    height: 32px;
+    background: url('../img/about-us/money-jar-green.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.help-wrapper:hover .donate-img{
+    background: url('../img/about-us/money-jar-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.help-img{
+    width: 32px;
+    height: 32px;
+    background: url('../img/about-us/support-green.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.help-wrapper:hover .help-img{
+    background: url('../img/about-us/support-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fund-img{
+    width: 32px;
+    height: 32px;
+    background: url('../img/about-us/fund-green.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.help-wrapper:hover .fund-img{
+    background: url('../img/about-us/fund-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/********************************************
+                GALLERY SECTION
+********************************************/
+#gallery{
+    background: #f4f4f4;
+}
+#gallery .leaf-bg{
+    background: url(../img/about-us/transparent-leaf-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+#gallery-wrapper{
+    margin: 50px 70px;
+}
+.gallery-img{
+    display: flex;
+    min-width: 300px;
+    height: 300px;
+}
+
+.gallery-img img{
+    transition: all .3s ease-in-out;
+}
+.img-container{
+    height: 300px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.img-overlay{
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.img-container:hover .img-overlay{
+    opacity: 1;
+}
+.img-container:hover img{
+    transform: scale(1.2);
+}
+.img-container h2{
+    font-family: 'Mr Dafoe',sans-serif;
+    padding-top: 190px;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+.img-container .seprator{
+    border-bottom: none;
+    margin-left: 30px;
+    width: 180px;
+}
+/********************************************
+            TESTIMONIAL SECTION
+********************************************/
+.review-box{
+    border: 1px solid #ccc;
+    width: 450px;
+    height: 280px;
+}
+.review-img-1{
+    width: 700px;
+    height: 100%;
+    background: url('../img/testimonial/human-girl-1-e.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}.review-img-2{
+    width: 700px;
+    height: 100%;
+    background: url('../img/testimonial/human-boy-2-e.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.review-img-3{
+    width: 700px;
+    height: 100%;
+    background: url('../img/testimonial/human-girl-2-e.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.inner-box{
+    width: 450px;
+    height: 280px;
+    padding: 15px;
+    display: flex;
+}
+.reivew-content{
+    padding: 15px;
+    background: var(--green);
+}
+.designation{
+    color: #fff;
+}
+.social-icons i{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    color: #FFF;
+    transition: all .3s ease-in-out;
+    border: solid 1px #FFF;
+}
+.social-icons i:hover{
+    border: solid 1px #FFF;
+    background: #fff;
+    color: var(--green)
+    
+}
+.people-review-bg{
+    background: url('../img/testimonial/bg-review.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 50vh;
+    margin-top: 100px;
+}
+.review-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.9);
+}
+.people-review{
+    color: #FFF;
+    width: 100%;
+    padding-top: 70px;
+}
+.people-review i{
+    padding-top: 10px;
+}
+#review-container.owl-theme .owl-nav [class*=owl-]{
+    background: var(--darkGrey);
+    padding: 7px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+#review-container .owl-next{
+    width: 30px;
+    height: 30px;
+    line-height: 17px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+}
+#review-container .owl-prev{
+    width: 30px;
+    height: 30px;
+    line-height: 17px;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+}
+#review-container.owl-theme .owl-nav [class*=owl-]:hover{
+    background: var(--green);
+    color: var(--white);
+}
+#review-container .owl-nav{
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+/*******************
+OWL CAROUSEL CHANGES
+********************/
+.owl-dots{
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span{
+    height: 15px;
+    width: 3px;
+    transition: all .4s ease-in-out;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    height: 30px;
+    width: 3px;
+    background: var(--green);
+}
+/********************************************
+            CLIENT SECTION
+********************************************/
+#client .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.div-clients{
+    width: 200px;
+    height: 200px;
 }
