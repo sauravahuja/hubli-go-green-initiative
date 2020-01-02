@@ -15,69 +15,77 @@
         White:               #fff
         Black:               #000   
 ============================================ */
-:root{
+:root {
     --green: #A0D406;
     --white: #ffffff;
     --smokeGrey: #ACACAC;
     --darkGrey: #505050;
     --black: #000;
 }
-body{
+
+body {
     font-family: 'Poppins', 'sans-serif';
-    min-height: 10000px;
+/*    min-height: 10000px;*/
 }
+
 /********************************************
                 Tweaking Bootstrap
 ********************************************/
 
-@media (min-width: 1200px){
-.container {
-    width: 1000px!important;
-}
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px !important;
+    }
 }
 
 /********************************************
                 GENERAL CLASS
 ********************************************/
-.highlighted-text{
+.highlighted-text {
     color: var(--green);
 }
+
 /********************************************
                 GENERAL BUTTON
 ********************************************/
-a.btn-general{
+a.btn-general {
     padding: 8px 20px;
     border-radius: 5px;
     font-weight: 700;
     letter-spacing: 1px;
     text-decoration: none;
 }
-.btn-green{
+
+.btn-green {
     background: var(--green);
     color: var(--darkGrey);
     border: 2px transparent solid;
     transition: all .3s ease-in-out;
 }
-.btn-green:hover{
+
+.btn-green:hover {
     background: transparent;
     border: 2px solid var(--green);
     color: var(--white);
 }
-.btn-white{
+
+.btn-white {
     color: var(--darkGrey);
     background: var(--white);
     border: 2px transparent solid;
     transition: all .3s ease-in-out;
 }
-.btn-white:hover{
+
+.btn-white:hover {
     background: transparent;
     border: 2px solid var(--white);
     color: var(--white);
 }
+
 /********************************************
                 HOME SECTION
 ********************************************/
-.home-wrapper{
+.home-wrapper {
     width: 100%;
     height: 100vh;
     background: url('../img/home/home-bg.jpg');
@@ -85,53 +93,62 @@ a.btn-general{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-/*    z-index: -1;*/
+    /*    z-index: -1;*/
 }
-.home-overlay{
-    background: rgba(0,0,0,0.7);
+
+.home-overlay {
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: 0;
     right: 50%;
     bottom: 0;
-    box-shadow: 7px -10px 5px 10px rgba(0,0,0,0.7);
+    box-shadow: 7px -10px 5px 10px rgba(0, 0, 0, 0.7);
 }
-.home-content h1{
+
+.home-content h1 {
     margin: 0;
 }
-.home-content{
+
+.home-content {
     height: 400px;
     width: 674.5px;
     transform: translateY(50%);
 }
-#home .home-content h1{
-    font-family: 'Mr Dafoe',sans-serif;
+
+#home .home-content h1 {
+    font-family: 'Mr Dafoe', sans-serif;
     color: var(--green);
     font-size: 58px;
 }
-#home .home-content h2{
+
+#home .home-content h2 {
     font-size: 48px;
     color: var(--white);
     font-weight: 900;
 }
-#home .home-content p{
+
+#home .home-content p {
     color: var(--white);
     font-weight: 600;
     font-size: 18px;
 }
-.btn-wrapper a:first-child{
+
+.btn-wrapper a:first-child {
     margin-right: 10px;
 }
+
 /********************************************
                 ABOUT-US SECTION
 ********************************************/
-#about-us{
+#about-us {
     background: var(--white);
     height: 100vh;
     width: 100%;
     z-index: 999;
 }
-.seprator{
+
+.seprator {
     display: inline-block;
     height: 5px;
     width: 200px;
@@ -139,7 +156,8 @@ a.btn-general{
     border-bottom: 1px solid #ddd;
     position: relative;
 }
-.leaf-bg{
+
+.leaf-bg {
     display: inline-block;
     position: absolute;
     top: -20px;
@@ -152,70 +170,100 @@ a.btn-general{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.section-head .upper-head{
-    font-family: 'Mr Dafoe',sans-serif;
+
+.section-head .upper-head {
+    font-family: 'Mr Dafoe', sans-serif;
     color: #ccc;
     font-size: 32px;
 }
-.section-head .head{
+
+.section-head .head {
     font-weight: 800;
     font-size: 32px;
 }
-.about-mission{
+
+.about-mission {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #eee;
     padding-top: 10px;
     cursor: default;
 }
-.about-mission span,.about-vision span,.about-philosophy span{
+
+.about-mission span,
+.about-vision span,
+.about-philosophy span {
     font-weight: 600;
 }
-#mission-content,#vision-content,#philosophy-content{
+
+#mission-content,
+#vision-content,
+#philosophy-content {
     padding: 10px;
-    
+
 }
+
 @keyframes active-inactive {
-  from {opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
+
 @keyframes inactive-active {
-  from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-.active{
+
+.active {
     display: block;
     animation: inactive-active .5s;
 }
-.inactive{
+
+.inactive {
     animation: active-inactive .5s;
-     display: none;
+    display: none;
 }
-.about-vision{
+
+.about-vision {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #eee;
     padding-top: 10px;
     cursor: default;
 }
-.about-philosophy{
+
+.about-philosophy {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
     cursor: default;
 }
-#mission-click,#vision-click,#philosophy-click{
+
+#mission-click,
+#vision-click,
+#philosophy-click {
     padding: 4px;
 }
-.image-container{
-/*    background: red;*/
+
+.image-container {
+    /*    background: red;*/
     width: 400px;
     height: 400px;
     position: relative;
     padding-left: 50px;
     padding-top: -40px;
 }
-.green-box{
+
+.green-box {
     width: 100px;
     height: 100px;
     background: var(--green);
@@ -224,7 +272,8 @@ a.btn-general{
     left: 45px;
     z-index: 0;
 }
-.image-about-bg{
+
+.image-about-bg {
     width: 250px;
     height: 250px;
     background: url('../img/about-us/plant-bg.jpg');
@@ -234,7 +283,8 @@ a.btn-general{
     left: 50px;
     z-index: 1;
 }
-.image-about-circle{
+
+.image-about-circle {
     width: 170px;
     height: 170px;
     border-radius: 50%;
@@ -247,7 +297,8 @@ a.btn-general{
     right: 40px;
     z-index: 3;
 }
-.green-circle{
+
+.green-circle {
     width: 160px;
     height: 170px;
     background: var(--green);
@@ -261,11 +312,12 @@ a.btn-general{
 /********************************************
                 WORK SECTION
 ********************************************/
-#work{
+#work {
     position: relative;
     margin-top: 140px;
 }
-.work-bg-container{
+
+.work-bg-container {
     background: url(../img/what-we-do/bgbg.jpg);
     background-position: center;
     background-size: cover;
@@ -276,8 +328,9 @@ a.btn-general{
     bottom: 0;
     z-index: -2;
 }
-.work-bg-overlay{
-    background: rgba(0,0,0,0.8);
+
+.work-bg-overlay {
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -285,37 +338,45 @@ a.btn-general{
     bottom: 0;
     z-index: -1;
 }
-#work .content-box-md{
+
+#work .content-box-md {
     z-index: -3;
 }
-#work .leaf-bg{
+
+#work .leaf-bg {
     background: url(../img/about-us/transparent-leaf-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#work .upper-head{
+
+#work .upper-head {
     color: #c8c8c8;
 }
-#work .head{
+
+#work .head {
     color: #fefefe;
 }
-.work{
+
+.work {
     width: 300px;
     height: 350px;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
-.work-container{
+
+.work-container {
     width: 100%;
     margin: 0 auto;
 }
-.works-wrapper{
+
+.works-wrapper {
     display: flex;
     justify-content: center;
 }
-.recycle-bg-img{
+
+.recycle-bg-img {
     background: url('../img/what-we-do/recycle-img-e.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -327,10 +388,12 @@ a.btn-general{
     z-index: 2;
     transition: all .4s ease-in-out;
 }
-.work:hover .recycle-bg-img{
+
+.work:hover .recycle-bg-img {
     transform: scale(1.15);
 }
-.ecosystem-bg-img{
+
+.ecosystem-bg-img {
     background: url('../img/what-we-do/ecosystem-e.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -342,10 +405,12 @@ a.btn-general{
     z-index: 2;
     transition: all .4s ease-in-out;
 }
-.work:hover .ecosystem-bg-img{
+
+.work:hover .ecosystem-bg-img {
     transform: scale(1.15);
 }
-.wind-bg-img{
+
+.wind-bg-img {
     background: url('../img/what-we-do/windmill-e.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -357,10 +422,12 @@ a.btn-general{
     z-index: 2;
     transition: all .4s ease-in-out;
 }
-.work:hover .wind-bg-img{
+
+.work:hover .wind-bg-img {
     transform: scale(1.15);
 }
-.forest-bg-img{
+
+.forest-bg-img {
     background: url('../img/what-we-do/save-forest-e.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,11 +439,13 @@ a.btn-general{
     z-index: 2;
     transition: all .4s ease-in-out;
 }
-.work:hover .forest-bg-img{
+
+.work:hover .forest-bg-img {
     transform: scale(1.15);
 }
-.work-overlay{
-    background: rgba(0,0,0,0.5);
+
+.work-overlay {
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -384,35 +453,43 @@ a.btn-general{
     bottom: 0;
     z-index: 3;
 }
-.work-content{
+
+.work-content {
     position: absolute;
-    top: 40%;   
+    top: 40%;
     left: 14%;
     z-index: 5;
 }
-.work-content h3{
+
+.work-content h3 {
     color: #Fff;
 }
-.learn-btn{
+
+.learn-btn {
     cursor: pointer;
 }
-#r-learn-content{
+
+#r-learn-content {
     width: 250px;
     color: #fff;
 }
-#e-learn-content{
+
+#e-learn-content {
     width: 250px;
     color: #fff;
 }
-#w-learn-content{
+
+#w-learn-content {
     width: 250px;
     color: #fff;
 }
-#f-learn-content{
+
+#f-learn-content {
     width: 250px;
     color: #fff;
 }
-.recycle-icon{
+
+.recycle-icon {
     min-height: 32px;
     background: url('../img/what-we-do/recycle-icon.png');
     background-size: contain;
@@ -420,7 +497,8 @@ a.btn-general{
     background-repeat: no-repeat;
     transition: all .4s ease-in-out;
 }
-.ecosystem-icon{
+
+.ecosystem-icon {
     min-height: 32px;
     background: url('../img/what-we-do/ecosystem-icon.png');
     background-size: contain;
@@ -428,7 +506,8 @@ a.btn-general{
     background-repeat: no-repeat;
     transition: all .4s ease-in-out;
 }
-.wind-icon{
+
+.wind-icon {
     min-height: 32px;
     background: url('../img/what-we-do/windmill-icon.png');
     background-size: contain;
@@ -436,7 +515,8 @@ a.btn-general{
     background-repeat: no-repeat;
     transition: all .4s ease-in-out;
 }
-.forest-icon{
+
+.forest-icon {
     min-height: 32px;
     background: url('../img/what-we-do/save-forest-icon.png');
     background-size: contain;
@@ -444,24 +524,31 @@ a.btn-general{
     background-repeat: no-repeat;
     transition: all .4s ease-in-out;
 }
-.work:hover .ecosystem-icon,.work:hover .forest-icon,.work:hover .wind-icon,.work:hover .recycle-icon{
+
+.work:hover .ecosystem-icon,
+.work:hover .forest-icon,
+.work:hover .wind-icon,
+.work:hover .recycle-icon {
     transform: translateY(-20px);
 }
+
 /********************************************
                 HELP-US SECTION
 ********************************************/
 
-#help-us .leaf-bg{
+#help-us .leaf-bg {
     background: url(../img/about-us/white-leaf-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.progress-bar{
+
+.progress-bar {
     background: var(--green);
     position: relative;
     border-radius: 50px;
 }
+
 .progress {
     height: 2px;
     border-radius: 50px;
@@ -469,7 +556,8 @@ a.btn-general{
     overflow: visible;
     position: relative;
 }
-.progress:after{
+
+.progress:after {
     content: "";
     width: 10px;
     height: 10px;
@@ -479,36 +567,42 @@ a.btn-general{
     position: absolute;
     top: -4px;
 }
+
 .progress-bar span {
     position: absolute;
     top: -35px;
-    left: 95%;    
+    left: 95%;
     color: var(--green);
     padding: 5px;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
 }
-#help-us .button-wrapper a:hover{
+
+#help-us .button-wrapper a:hover {
     color: var(--darkGrey);
 }
-.help-wrapper{
+
+.help-wrapper {
     border: 2px solid var(--green);
     padding: 20px;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
-.help-wrapper:hover{
+
+.help-wrapper:hover {
     border: 2px solid transparent;
     background: var(--green);
 }
-.help-wrapper:hover .stop-img{
+
+.help-wrapper:hover .stop-img {
     background: url('../img/about-us/ecological-white.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.stop-img{
+
+.stop-img {
     width: 32px;
     height: 32px;
     background: url('../img/about-us/ecological-green.png');
@@ -516,7 +610,8 @@ a.btn-general{
     background-size: cover;
     background-position: center;
 }
-.donate-img{
+
+.donate-img {
     width: 32px;
     height: 32px;
     background: url('../img/about-us/money-jar-green.png');
@@ -524,13 +619,15 @@ a.btn-general{
     background-size: cover;
     background-position: center;
 }
-.help-wrapper:hover .donate-img{
+
+.help-wrapper:hover .donate-img {
     background: url('../img/about-us/money-jar-white.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.help-img{
+
+.help-img {
     width: 32px;
     height: 32px;
     background: url('../img/about-us/support-green.png');
@@ -538,13 +635,15 @@ a.btn-general{
     background-size: cover;
     background-position: center;
 }
-.help-wrapper:hover .help-img{
+
+.help-wrapper:hover .help-img {
     background: url('../img/about-us/support-white.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.fund-img{
+
+.fund-img {
     width: 32px;
     height: 32px;
     background: url('../img/about-us/fund-green.png');
@@ -552,44 +651,51 @@ a.btn-general{
     background-size: cover;
     background-position: center;
 }
-.help-wrapper:hover .fund-img{
+
+.help-wrapper:hover .fund-img {
     background: url('../img/about-us/fund-white.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 /********************************************
                 GALLERY SECTION
 ********************************************/
-#gallery{
+#gallery {
     background: #f4f4f4;
 }
-#gallery .leaf-bg{
+
+#gallery .leaf-bg {
     background: url(../img/about-us/transparent-leaf-bg.png);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
-#gallery-wrapper{
+
+#gallery-wrapper {
     margin: 50px 70px;
 }
-.gallery-img{
+
+.gallery-img {
     display: flex;
     min-width: 300px;
     height: 300px;
 }
 
-.gallery-img img{
+.gallery-img img {
     transition: all .3s ease-in-out;
 }
-.img-container{
+
+.img-container {
     height: 300px;
     width: 350px;
     position: relative;
     overflow: hidden;
 }
-.img-overlay{
-    background: rgba(0,0,0,0.6);
+
+.img-overlay {
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -598,39 +704,47 @@ a.btn-general{
     opacity: 0;
     transition: all .4s ease-in-out;
 }
-.img-container:hover .img-overlay{
+
+.img-container:hover .img-overlay {
     opacity: 1;
 }
-.img-container:hover img{
+
+.img-container:hover img {
     transform: scale(1.2);
 }
-.img-container h2{
-    font-family: 'Mr Dafoe',sans-serif;
+
+.img-container h2 {
+    font-family: 'Mr Dafoe', sans-serif;
     padding-top: 190px;
     padding-left: 30px;
     margin-bottom: 0;
 }
-.img-container .seprator{
+
+.img-container .seprator {
     border-bottom: none;
     margin-left: 30px;
     width: 180px;
 }
+
 /********************************************
             TESTIMONIAL SECTION
 ********************************************/
-.review-box{
+.review-box {
     border: 1px solid #ccc;
     width: 450px;
     height: 280px;
 }
-.review-img-1{
+
+.review-img-1 {
     width: 700px;
     height: 100%;
     background: url('../img/testimonial/human-girl-1-e.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-}.review-img-2{
+}
+
+.review-img-2 {
     width: 700px;
     height: 100%;
     background: url('../img/testimonial/human-boy-2-e.jpg');
@@ -638,7 +752,8 @@ a.btn-general{
     background-repeat: no-repeat;
     background-position: right;
 }
-.review-img-3{
+
+.review-img-3 {
     width: 700px;
     height: 100%;
     background: url('../img/testimonial/human-girl-2-e.jpg');
@@ -646,20 +761,24 @@ a.btn-general{
     background-repeat: no-repeat;
     background-position: right;
 }
-.inner-box{
+
+.inner-box {
     width: 450px;
     height: 280px;
     padding: 15px;
     display: flex;
 }
-.reivew-content{
+
+.reivew-content {
     padding: 15px;
     background: var(--green);
 }
-.designation{
+
+.designation {
     color: #fff;
 }
-.social-icons i{
+
+.social-icons i {
     text-align: center;
     width: 30px;
     height: 30px;
@@ -670,13 +789,14 @@ a.btn-general{
     transition: all .3s ease-in-out;
     border: solid 1px #FFF;
 }
-.social-icons i:hover{
+
+.social-icons i:hover {
     border: solid 1px #FFF;
     background: #fff;
     color: var(--green)
-    
 }
-.people-review-bg{
+
+.people-review-bg {
     background: url('../img/testimonial/bg-review.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -685,30 +805,35 @@ a.btn-general{
     height: 50vh;
     margin-top: 100px;
 }
-.review-overlay{
+
+.review-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
 }
-.people-review{
+
+.people-review {
     color: #FFF;
     width: 100%;
     padding-top: 70px;
 }
-.people-review i{
+
+.people-review i {
     padding-top: 10px;
 }
-#review-container.owl-theme .owl-nav [class*=owl-]{
+
+#review-container.owl-theme .owl-nav [class*=owl-] {
     background: var(--darkGrey);
     padding: 7px;
     border-radius: 50%;
     text-align: center;
     transition: all .3s ease-in-out;
 }
-#review-container .owl-next{
+
+#review-container .owl-next {
     width: 30px;
     height: 30px;
     line-height: 17px;
@@ -716,7 +841,8 @@ a.btn-general{
     right: -40px;
     top: 50%;
 }
-#review-container .owl-prev{
+
+#review-container .owl-prev {
     width: 30px;
     height: 30px;
     line-height: 17px;
@@ -724,11 +850,13 @@ a.btn-general{
     left: -40px;
     top: 50%;
 }
-#review-container.owl-theme .owl-nav [class*=owl-]:hover{
+
+#review-container.owl-theme .owl-nav [class*=owl-]:hover {
     background: var(--green);
     color: var(--white);
 }
-#review-container .owl-nav{
+
+#review-container .owl-nav {
     height: 40vh;
     position: absolute;
     top: 0;
@@ -736,23 +864,148 @@ a.btn-general{
     right: 0;
     z-index: -2;
 }
+
 /*******************
 OWL CAROUSEL CHANGES
 ********************/
-.owl-dots{
+.owl-dots {
     padding-top: 20px;
     position: absolute;
     width: 100%;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span{
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot span {
     height: 15px;
     width: 3px;
     transition: all .4s ease-in-out;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     height: 30px;
     width: 3px;
     background: var(--green);
+}
+
+/********************************************
+            BLOG SECTION
+********************************************/
+.blog-container {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.blog-overlay{
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: all .4s ease-out;
+    padding: 10px;
+}
+.blog-overlay h4{
+    font-weight: 700;
+    padding-top: 20px;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(-100%);
+    }
+    20%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-20%);
+    }
+    60%{
+         transform: translateY(0);
+    }
+    80%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.blog-container:hover .blog-overlay{
+    opacity: 1;
+    animation: bounce 1s;
+}
+.blog-bg{
+    transition: all .3s ease-in-out;
+}
+.blog-container:hover .blog-bg{
+    transform: scale(1.2);
+}
+.blog-bg-1 {
+    background: url(../img/blogs/solar-energy-e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.blog-bg-2 {
+    background: url(../img/blogs/corals-img-e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.blog-bg-3 {
+    background: url(../img/blogs/wind-energy-e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.blog-footer {
+background: var(--green);
+position: absolute;
+bottom: 0;
+right: 0;
+left: 0;
+}
+
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-wrapper p{
+    padding-top: 15px;
+}
+.blog-footer p {
+    padding: 10px;
+    color: #fff;
+    margin: 0;
+}
+.blog-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.read-more-blog{
+    cursor: pointer;
 }
 /********************************************
             CLIENT SECTION
@@ -761,7 +1014,8 @@ OWL CAROUSEL CHANGES
     padding: 0;
     margin: 0;
 }
-.div-clients{
+
+.div-clients {
     width: 200px;
     height: 200px;
 }
