@@ -1,0 +1,187 @@
+/**
+ * about.css
+ * Contains CSS for basic static website named "Hubli - A Go Green Initiative"
+ */
+
+/* =========================================
+    Default Theme
+    ----------------------------------------
+    Fonts: Poppins and Mr. Dafoe
+    ----------------------------------------
+    Colors:
+        Green:               #A0D406
+        Smoke Grey:          #ACACAC
+        Dark Grey:           #505050
+        White:               #fff
+        Black:               #000   
+============================================ */
+
+
+/********************************************
+                ABOUT HEAD
+********************************************/
+
+#about-head{
+    height: 50vh;
+    width: 100%;
+    z-index: 0;
+}
+.about-head-wrapper{
+    height: 100%;
+    background: url('../img/about-page/head/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+.about-head-content{
+    color: #fff;
+    padding-top: 90px;
+    z-index: -3;
+}
+.about-head-content h1{
+    font-weight: bold;
+}
+.about-head-overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+/********************************************
+                HELP SECTION
+********************************************/
+
+#help-us{
+    background: #f4f4f4;
+    margin-top: 80px;
+}
+/********************************************
+                TETSIMONIAL SECTION
+********************************************/
+.people-review-bg{
+    background: #f4f4f4;
+    height: 350px;
+    margin-top: 0;
+}
+#review .people-review{
+    color: #111;
+}
+    
+/********************************************
+                STATS SECTION
+********************************************/
+#stats{
+  height: 670px;
+    margin-top: 80px;
+}
+.stats-bg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../img/about-page/stats/bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.stats-overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#stats .section-head h2{
+    color: #fff;
+    font-weight: 500;
+}
+#stats .section-head .leaf-bg,
+#help-us .section-head .leaf-bg{
+    background: url(../img/about-us/transparent-leaf-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+.counter-wrapper{
+    background: rgba(255,255,255,0.2);
+    border: 2px #ccc solid;
+    border-radius: 5px;
+    padding: 15px;
+    width: 180px;
+    height: 220px;
+}
+.counter-wrapper h2{
+    color: #fff;
+}
+.counter-wrapper .s-dash{
+    padding: 1px 20px;
+    margin-bottom: 10px;
+}
+.counter-wrapper .highlighted-text{
+    font-weight: 600;
+}
+.counter-icon-1{
+    width: 60px;
+    height: 70px;
+    background: url(../img/about-page/stats/award-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.counter-icon-2{
+    width: 60px;
+    height: 70px;
+    background: url(../img/about-page/stats/donor-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.counter-icon-3{
+    width: 60px;
+    height: 70px;
+    background: url(../img/about-page/stats/trophy-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.counter-icon-4{
+    width: 60px;
+    height: 70px;
+    background: url(../img/about-page/stats/support-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+/********************************************
+                CLIENT SECTION
+********************************************/
+#client{
+    margin-top: 50px;
+}
+#client .owl-nav{
+    display: none;
+}
