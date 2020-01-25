@@ -1,0 +1,53 @@
+#gallery-head{
+    height: 50vh;
+    width: 100%;
+    z-index: 0;
+}
+.gallery-head-wrapper{
+    height: 100%;
+    background: url('../img/gallery-page/page-head.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+.gallery-head-content{
+    color: #fff;
+    padding-top: 90px;
+    z-index: -3;
+}
+.gallery-head-content h1{
+    font-weight: bold;
+}
+.gallery-head-overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+
+.isotope-container{
+    padding: 0 70px;
+}
+#isotope-filters{
+    text-align: center;
+}
+.img-container img{
+    transition: all .3s ease-in-out;
+}
+.btn_iso{
+    border: none;
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+}
+.active_iso{
+    background: var(--green);
+    border-radius: 5px;
+    color: #fff;
+}
