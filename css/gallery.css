@@ -1,3 +1,25 @@
+/**
+ * gallery.css
+ * Contains CSS for basic static website named "Hubli - A Go Green Initiative"
+ */
+
+/* =========================================
+    Default Theme
+    ----------------------------------------
+    Fonts: Poppins and Mr. Dafoe
+    ----------------------------------------
+    Colors:
+        Green:               #A0D406
+        Smoke Grey:          #ACACAC
+        Dark Grey:           #505050
+        White:               #fff
+        Black:               #000   
+============================================ */
+
+
+/********************************************
+                GALLERY HEAD
+********************************************/
 #gallery-head{
     height: 50vh;
     width: 100%;
@@ -31,6 +53,9 @@
 }
 
 
+/********************************************
+                GALLERY
+********************************************/
 .isotope-container{
     padding: 0 70px;
 }

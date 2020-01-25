@@ -1,5 +1,5 @@
 /**
- * style.css
+ * main-style.css
  * Contains CSS for basic static website named "Hubli - A Go Green Initiative"
  */
 
@@ -80,6 +80,17 @@ a.btn-general {
     background: transparent;
     border: 2px solid var(--white);
     color: var(--white);
+}
+
+.btn-dark {
+    background: var(--darkGrey);
+    color: var(--white);
+    transition: all .3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background: var(--green);
+    color: var(--darkGrey);
 }
 
 /********************************************
