@@ -134,16 +134,16 @@
 .blog-right-container .search-container{
     padding-top: 30px;
 }
-.blog-right-container .search-container input{
+.search-container input{
     background: transparent;
     border: solid 2px #eee;
     line-height: 30px;
     width: 190px;
 }
-.blog-right-container .search-container input[type=text]:focus{
+.search-container input[type=text]:focus{
     border: 2px solid var(--green);
 }
-.blog-right-container .search-container a{
+.search-container a{
     border-radius: 0;
     padding: 6px 20px;
     color: var(--white);
@@ -183,6 +183,7 @@
 .subscribe-wrapper input{
     width: 250px;
     padding: 5px;
+    border-radius: 5px;
 }
 .subscribe-wrapper a{
     padding: 7px;

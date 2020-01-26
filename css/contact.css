@@ -1,0 +1,97 @@
+/**
+ * blog-grid.css
+ * Contains CSS for basic static website named "Hubli - A Go Green Initiative"
+ */
+
+/* =========================================
+    Default Theme
+    ----------------------------------------
+    Fonts: Poppins and Mr. Dafoe
+    ----------------------------------------
+    Colors:
+        Green:               #A0D406
+        Smoke Grey:          #ACACAC
+        Dark Grey:           #505050
+        White:               #fff
+        Black:               #000   
+============================================ */
+
+
+/********************************************
+                BLOG GRID HEAD
+********************************************/
+#contact-head{
+    height: 50vh;
+    width: 100%;
+    z-index: 0;
+}
+.contact-head-wrapper{
+    height: 100%;
+    background: url('../img/contact-page/head-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+.contact-head-content{
+    color: #fff;
+    padding-top: 90px;
+    z-index: -3;
+}
+.contact-head-content h1{
+    font-weight: bold;
+}
+.contact-head-overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+
+.contact-wrapper{
+    display: flex;
+}
+.location-details{
+    display: flex;
+}
+.get-in-touch{
+    width: 50%;
+}
+
+.get-in-touch input{
+    padding: 5px;
+}
+.get-in-touch .text-name,
+.get-in-touch .text-email{
+    width: 45%;
+}
+.get-in-touch .text-subject{
+    width: 91%;
+    margin-top: 10px;
+}
+.get-in-touch .text-message{
+    resize: none;
+    width: 91%;
+    margin-top: 10px;
+    padding: 6px;
+}
+.map{
+    width: 50%;
+}
+.map iframe{
+    padding: 50px 50px 20px 0;
+    height: 400px;
+}
+.loc-right,
+.loc-left{
+    width: 50%;   
+}
+.loc-right span{
+    font-size: 16px;
+    padding-right: 5px;
+}

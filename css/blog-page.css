@@ -1,0 +1,153 @@
+/**
+ * blog-page.css
+ * Contains CSS for basic static website named "Hubli - A Go Green Initiative"
+ */
+
+/* =========================================
+    Default Theme
+    ----------------------------------------
+    Fonts: Poppins and Mr. Dafoe
+    ----------------------------------------
+    Colors:
+        Green:               #A0D406
+        Smoke Grey:          #ACACAC
+        Dark Grey:           #505050
+        White:               #fff
+        Black:               #000   
+============================================ */
+
+
+/********************************************
+                BLOG GRID HEAD
+********************************************/
+#blog-page-head{
+    height: 50vh;
+    width: 100%;
+    z-index: 0;
+}
+.blog-page-head-wrapper{
+    height: 100%;
+    background: url('../img/blog-page/head-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+.blog-page-head-content{
+    color: #fff;
+    padding-top: 90px;
+    z-index: -3;
+}
+.blog-page-head-content h1{
+    font-weight: bold;
+}
+.blog-page-head-overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+/********************************************
+                BLOG POST
+********************************************/
+
+.blog-post-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 50px;
+}
+.blog-left .blog-img{
+    width: 100%;
+    height: 400px;
+}
+.blog-left .blog-details span{
+    padding-right: 10px;
+    color: var(--darkGrey);
+}
+.blog-left .blog-quote{
+    display: flex;
+    padding-top: 20px;
+}
+.blog-left .quote-marks{
+    line-height: 70px;
+    padding: 10px;
+}
+.blog-left .quote-content{
+    background: var(--darkGrey);
+    color: #fff;
+    padding: 20px;
+}
+.blog-left .important-points{
+    padding: 10px 0 20px 20px;
+}
+.blog-left .important-points span{
+    padding-right: 10px;
+}
+.blog-left .author-image img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.author-details{
+    margin-top: 40px;
+    display: flex;
+    border-top: solid 1px var(--smokeGrey);
+    border-bottom: solid 1px var(--smokeGrey);
+}
+.author-name{
+    font-weight: 500;
+    font-size: 16px;
+}
+.blog-left .author-info{
+    padding: 15px;
+}
+
+.blog-left .author-info span{
+    padding-right: 10px;
+}
+.blog-wrapper-min{
+    display: flex;
+    justify-content: space-around
+}
+.comments-wrapper{
+    display: flex;
+/*    border-bottom: solid 1px var(--smokeGrey);*/
+}
+.user-img img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin-top: 17px;
+}
+.comment-content{
+    width: 510px;
+    padding-left: 20px;
+}
+.comments .comment-head{
+    border-bottom: solid 1px var(--smokeGrey);
+    padding-bottom: 10px;
+}
+.comment-date{
+    color: var(--smokeGrey);
+    margin-top: -5px;
+}
+.post-comment-wrapper input{
+    width: 49%;
+    padding: 6px;
+}
+.post-comment-wrapper textarea{
+    width: 98%;
+    padding: 6px;
+}
+.post-comment-wrapper a:hover{
+    color: var(--darkGrey);
+}
+.post-comment-head{
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--smokeGrey);
+}
